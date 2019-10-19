@@ -15,9 +15,9 @@ depends          "hops"
 depends          "kagent"
 depends          "java"
 
-recipe           "install", "Installs a Livy Spark REST Server"
-recipe           "default", "Starts  a Livy Spark REST Server"
-recipe           "purge", "Removes and deletes an installed Livy Spark REST Server"
+recipe           "livy::install", "Installs a Livy Spark REST Server"
+recipe           "livy::default", "Starts  a Livy Spark REST Server"
+recipe           "livy::purge", "Removes and deletes an installed Livy Spark REST Server"
 
 attribute "livy/user",
           :description => "User to install/run as",
